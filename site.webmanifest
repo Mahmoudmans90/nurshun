@@ -1,0 +1,11 @@
+{
+  "name": "Nurshun Energy",
+  "short_name": "Nurshun",
+  "description": "Architectural, commercial, landscape, outdoor, and infrastructure lighting solutions.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "browser",
+  "background_color": "#07131e",
+  "theme_color": "#07131e",
+  "lang": "en"
+}

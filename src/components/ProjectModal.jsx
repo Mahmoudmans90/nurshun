@@ -211,7 +211,7 @@ const ProjectModal = ({ isOpen, onClose, project }) => {
                   />
                 </a>
 
-                {project.link && (
+                {/* {project.link && (
                   <a
                     href={project.link}
                     target="_blank"
@@ -221,7 +221,7 @@ const ProjectModal = ({ isOpen, onClose, project }) => {
                     Visit Project
                     <ExternalLink size={17} />
                   </a>
-                )}
+                )} */}
               </div>
             </div>
           </motion.div>

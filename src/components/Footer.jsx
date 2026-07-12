@@ -64,8 +64,12 @@ const Footer = () => {
               className="group inline-flex items-center gap-4"
               aria-label="Nurshun Energy home"
             >
-              <span className="flex h-14 w-14 items-center justify-center rounded-full border border-[#e2b63d]/40 bg-[#e2b63d]/10 text-sm font-bold tracking-[0.15em] text-[#e2b63d] transition group-hover:bg-[#e2b63d] group-hover:text-[#07131e]">
-                NSE
+              <span className="flex h-14 w-30 items-center justify-center rounded-full border border-[#e2b63d]/40 bg-[#e2b63d]/10 text-sm font-bold tracking-[0.15em] text-[#e2b63d] transition group-hover:bg-[#e2b63d] group-hover:text-[#07131e]">
+                <img
+                  src="/logo.png"
+                  alt=""
+                  className="w-full h-full object-cover p-3"
+                />
               </span>
 
               <span>

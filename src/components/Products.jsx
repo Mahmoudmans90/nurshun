@@ -12,8 +12,8 @@ const productRanges = [
     description:
       "Directional lighting solutions for focused architectural and landscape illumination.",
     applications: ["Landscape", "Façades", "Feature Lighting"],
-    cover: "/images/portfolio/covers/spot-lights.webp",
-    sheet: "/images/portfolio/sheets/spot-lights.webp",
+    cover: "/images/portfolio/covers/spot-lights.png",
+    sheet: "/images/portfolio/sheets/spot-lights.png",
   },
   {
     id: "module-neon-lights",
@@ -23,8 +23,8 @@ const productRanges = [
     description:
       "Flexible lighting systems for contours, signage, decorative details, and custom installations.",
     applications: ["Contours", "Signage", "Decorative"],
-    cover: "/images/portfolio/covers/module-neon-lights.webp",
-    sheet: "/images/portfolio/sheets/module-neon-lights.webp",
+    cover: "/images/portfolio/covers/module-neon-lights.png",
+    sheet: "/images/portfolio/sheets/module-neon-lights.png",
   },
   {
     id: "spike-tree-lights",
@@ -34,8 +34,8 @@ const productRanges = [
     description:
       "Outdoor accent fixtures created to highlight gardens, trees, and landscape features.",
     applications: ["Gardens", "Trees", "Landscape"],
-    cover: "/images/portfolio/covers/spike-tree-lights.webp",
-    sheet: "/images/portfolio/sheets/spike-tree-lights.webp",
+    cover: "/images/portfolio/covers/spike-tree-lights.png",
+    sheet: "/images/portfolio/sheets/spike-tree-lights.png",
   },
   {
     id: "window-uplights",
@@ -45,8 +45,8 @@ const productRanges = [
     description:
       "Discreet architectural fixtures for window details, vertical surfaces, and upward illumination.",
     applications: ["Windows", "Columns", "Architecture"],
-    cover: "/images/portfolio/covers/window-uplights.webp",
-    sheet: "/images/portfolio/sheets/window-uplights.webp",
+    cover: "/images/portfolio/covers/window-uplights.png",
+    sheet: "/images/portfolio/sheets/window-uplights.png",
   },
   {
     id: "linear-wallwasher-lights",
@@ -56,8 +56,8 @@ const productRanges = [
     description:
       "Uniform linear illumination engineered to reveal façades, textures, and large wall surfaces.",
     applications: ["Façades", "Walls", "Linear Lighting"],
-    cover: "/images/portfolio/covers/linear-wallwasher-lights.webp",
-    sheet: "/images/portfolio/sheets/linear-wallwasher-lights.webp",
+    cover: "/images/portfolio/covers/linear-wallwasher-lights.png",
+    sheet: "/images/portfolio/sheets/linear-wallwasher-lights.png",
   },
   {
     id: "step-moisture-proof-wall-lights",
@@ -67,8 +67,8 @@ const productRanges = [
     description:
       "Durable recessed wall lighting for steps, pathways, and moisture-exposed environments.",
     applications: ["Steps", "Pathways", "Wet Areas"],
-    cover: "/images/portfolio/covers/step-moisture-proof-wall-lights.webp",
-    sheet: "/images/portfolio/sheets/step-moisture-proof-wall-lights.webp",
+    cover: "/images/portfolio/covers/step-moisture-proof-wall-lights.png",
+    sheet: "/images/portfolio/sheets/step-moisture-proof-wall-lights.png",
   },
   {
     id: "fountain-floor-tile-lights",
@@ -78,8 +78,8 @@ const productRanges = [
     description:
       "Integrated lighting solutions for fountains, floors, and refined architectural surfaces.",
     applications: ["Fountains", "Floors", "In-Ground"],
-    cover: "/images/portfolio/covers/fountain-floor-tile-lights.webp",
-    sheet: "/images/portfolio/sheets/fountain-floor-tile-lights.webp",
+    cover: "/images/portfolio/covers/fountain-floor-tile-lights.png",
+    sheet: "/images/portfolio/sheets/fountain-floor-tile-lights.png",
   },
   {
     id: "garden-light-heads",
@@ -89,8 +89,8 @@ const productRanges = [
     description:
       "Decorative and functional luminaire heads for tailored garden and landscape schemes.",
     applications: ["Gardens", "Landscape", "Outdoor Areas"],
-    cover: "/images/portfolio/covers/garden-light-heads.webp",
-    sheet: "/images/portfolio/sheets/garden-light-heads.webp",
+    cover: "/images/portfolio/covers/garden-light-heads.png",
+    sheet: "/images/portfolio/sheets/garden-light-heads.png",
   },
   {
     id: "garden-pole-lights",
@@ -100,8 +100,8 @@ const productRanges = [
     description:
       "Pole-mounted outdoor lighting for gardens, walkways, hospitality, and public spaces.",
     applications: ["Walkways", "Hospitality", "Public Spaces"],
-    cover: "/images/portfolio/covers/garden-pole-lights.webp",
-    sheet: "/images/portfolio/sheets/garden-pole-lights.webp",
+    cover: "/images/portfolio/covers/garden-pole-lights.png",
+    sheet: "/images/portfolio/sheets/garden-pole-lights.png",
   },
   {
     id: "bollard-lights",
@@ -111,8 +111,8 @@ const productRanges = [
     description:
       "Architectural pathway lighting that balances visual comfort, safety, and outdoor character.",
     applications: ["Paths", "Entrances", "Landscape"],
-    cover: "/images/portfolio/covers/bollard-lights.webp",
-    sheet: "/images/portfolio/sheets/bollard-lights.webp",
+    cover: "/images/portfolio/covers/bollard-lights.png",
+    sheet: "/images/portfolio/sheets/bollard-lights.png",
   },
   {
     id: "wall-street-tunnel-controls",
@@ -122,8 +122,8 @@ const productRanges = [
     description:
       "A broad range for exterior walls, roads, tunnels, infrastructure, and lighting control systems.",
     applications: ["Streets", "Tunnels", "Controls"],
-    cover: "/images/portfolio/covers/wall-street-tunnel-controls.webp",
-    sheet: "/images/portfolio/sheets/wall-street-tunnel-controls.webp",
+    cover: "/images/portfolio/covers/wall-street-tunnel-controls.png",
+    sheet: "/images/portfolio/sheets/wall-street-tunnel-controls.png",
   },
 ];
 
@@ -280,7 +280,8 @@ const Products = () => {
               </button>
 
               <span className="ml-auto text-xs tracking-[0.18em] text-white/30">
-                {String(activeIndex + 1).padStart(2, "0")} / {productRanges.length}
+                {String(activeIndex + 1).padStart(2, "0")} /{" "}
+                {productRanges.length}
               </span>
             </div>
           </div>
@@ -292,7 +293,7 @@ const Products = () => {
             aria-label={`View ${activeProduct.title} specifications`}
           >
             <img
-              src={activeProduct.sheet}
+              src={activeProduct.cover}
               alt={`${activeProduct.title} catalog sheet`}
               className="absolute inset-0 h-full w-full object-contain p-4 transition-transform duration-1000 group-hover:scale-[1.025] sm:p-8"
             />

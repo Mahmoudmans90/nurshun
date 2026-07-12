@@ -59,8 +59,6 @@ const defaultProjects = [
     copy: "Durable recessed wall lighting for steps, pathways, and moisture-exposed environments.",
     applications: ["Steps", "Pathways", "Wet Areas"],
     cover: "/images/step-moisture-proof-wall-lights.png",
-    catalogSheet:
-      "/images/portfolio/sheets/step-moisture-proof-wall-lights.png",
   },
   {
     id: "fountain-floor-tile-lights",
@@ -70,7 +68,6 @@ const defaultProjects = [
     copy: "Integrated lighting solutions for fountains, floors, and refined architectural surfaces.",
     applications: ["Fountains", "Floors", "In-Ground"],
     cover: "/images/fountain-floor-tile-lights.png",
-    catalogSheet: "/images/portfolio/sheets/fountain-floor-tile-lights.png",
   },
   {
     id: "garden-light-heads",
@@ -98,7 +95,6 @@ const defaultProjects = [
     copy: "Architectural pathway lighting that balances visual comfort, safety, and outdoor character.",
     applications: ["Paths", "Entrances", "Landscape"],
     cover: "/images/bollard-lights.png",
-    catalogSheet: "/images/portfolio/sheets/bollard-lights.png",
   },
   {
     id: "wall-street-tunnel-controls",
@@ -108,7 +104,6 @@ const defaultProjects = [
     copy: "A broad range for exterior walls, roads, tunnels, infrastructure, and lighting control systems.",
     applications: ["Streets", "Tunnels", "Controls"],
     cover: "/images/wall-street-tunnel-controls.png",
-    catalogSheet: "/images/portfolio/sheets/wall-street-tunnel-controls.png",
   },
 ];
 

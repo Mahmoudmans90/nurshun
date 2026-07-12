@@ -95,9 +95,13 @@ const Header = () => {
           className="group flex shrink-0 items-center gap-3.5"
           aria-label="Nurshun Energy home"
         >
-          <span className="relative flex h-12 w-14 items-center justify-center rounded-[1rem] border border-[#e2b63d]/40 bg-[#e2b63d]/10 transition duration-300 group-hover:border-[#e2b63d] group-hover:bg-[#e2b63d]">
-            <span className="text-sm font-bold tracking-[-0.04em] text-[#e2b63d] transition group-hover:text-[#07131e]">
-              NSE
+          <span className="relative flex h-10 w-20 items-center justify-center rounded-[1rem] border border-[#e2b63d]/40 bg-[#e2b63d]/10 transition duration-300 group-hover:border-[#e2b63d] group-hover:bg-[#e2b63d]">
+            <span className="text-sm font-bold tracking-[-0.04em] flex items-start justify-center text-[#e2b63d] transition group-hover:text-[#07131e]">
+              <img
+                src="/logo.png"
+                alt=""
+                className="w-full h-full object-cover p-2.5"
+              />
             </span>
 
             <SunMedium
